@@ -1,0 +1,155 @@
+
+<html lang="en">
+	<head>
+		<title>Template Page Raw Demo</title>
+		<style>
+			.page-header {
+				background: #1F497D;
+				color: #fff;
+			}
+			.page-footer {
+				background: coral;
+				color: #000;
+			}
+			.page-caption {
+				color: #1F497D;
+				font-size: 25px;
+			}
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+			table, td, th {
+				border: 1px solid #ccc;
+			}
+			td, th {
+				text-align: center;
+			}
+			.temperature-value-wrapper,
+			.highlighted-text {
+				font-weight: bold;
+				background: coral;
+				color: #000;
+				padding: 0 7.5px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- page-header -->
+		<section>
+			<div class="page-header">
+				Page-header-content
+			</div>
+		</section>
+
+		<!-- caption section -->
+		<section>
+			<h1 class="page-caption">
+				Some page-header #1
+			</h1>
+			<hr />
+		</section>
+
+		<!-- some paragraph in text section -->
+		<section>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</section>
+
+		<!-- some table section #1 -->
+		<section>
+			<table style="margin-bottom: 30px;">
+				<thead>
+					<tr>
+						<th>Header1</th>
+						<th>Header2</th>
+						<th>Header3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- some table section #2 (With values for Merge) -->
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th>Quarter of the year</th>
+						<th>Company 1 - sent</th>
+						<th>Company 2 - received</th>
+						<th>Total - lost</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>I</td>
+						<td><span class="highlighted-text">15</span></td>
+						<td><span class="highlighted-text">10</span></td>
+						<td rowspan="4"><span class="highlighted-text">22</span></td>
+					</tr>
+					<tr>
+						<td>II</td>
+						<td><span class="highlighted-text">10</span></td>
+						<td><span class="highlighted-text">8</span></td>
+					</tr>
+					<tr>
+						<td>III</td>
+						<td><span class="highlighted-text">22</span></td>
+						<td><span class="highlighted-text">17</span></td>
+					</tr>
+					<tr>
+						<td>IV</td>
+						<td><span class="highlighted-text">30</span></td>
+						<td><span class="highlighted-text">20</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- Some value in Merge-Text-Section #1 -->
+		<section>
+			<p>
+				Today's outside temperature is <span class="temperature-value-wrapper">0</span> degrees Celsius
+			</p>
+			<hr />
+		</section>
+
+		<!-- Some value in Merge-Text-Section #2 -->
+		<section>
+			<p>Mathematics section with values for insert (Merge-Text-Section #2)</p>
+			<p>
+				<span class="highlighted-text">7</span>
+				+
+				<span class="highlighted-text">15</span>
+				=
+				<span class="highlighted-text">22</span>
+			</p>
+			<hr />
+		</section>
+
+		<!-- page-footer-section -->
+		<section>
+			<div class="page-footer">
+				Page-footer-content
+			</div>
+		</section>
+	</body>
+</html>
